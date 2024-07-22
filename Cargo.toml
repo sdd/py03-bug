@@ -1,0 +1,13 @@
+[package]
+name = "repro_py03-polars_bug"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+polars = "0.39"
+pyo3 = { version = "0.21"}
+pyo3-polars = "0.13"
+
+[lib]
+name = "repro_bug"
+crate-type = ["cdylib"]
